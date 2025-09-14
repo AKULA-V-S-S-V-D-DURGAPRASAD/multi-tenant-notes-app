@@ -49,3 +49,4 @@ All accounts use password: **`password`**
    git clone https://github.com/yourusername/multi-tenant-notes-app.git
    cd multi-tenant-notes-app
    npm install
+   npm run dev
