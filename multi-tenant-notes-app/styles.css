@@ -1,0 +1,153 @@
+/* ===== Reset & Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background: #f4f7fb; /* light clean background */
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== Layout ===== */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2b6cb0; /* calm blue */
+}
+
+header p {
+  color: #666;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+/* ===== Forms ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+textarea {
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #fafafa;
+  transition: all 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2b6cb0;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(43, 108, 176, 0.2);
+}
+
+button {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #edf2f7; /* light gray button */
+  color: #2b6cb0;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #e2e8f0; /* slightly darker gray */
+}
+
+/* ===== Notes List ===== */
+.notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.note {
+  padding: 16px;
+  border-radius: 12px;
+  background: #fdfdfd;
+  border: 1px solid #e2e8f0;
+  transition: 0.2s ease;
+}
+
+.note:hover {
+  background: #f9fbfd;
+  transform: translateY(-3px);
+}
+
+.note h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2b6cb0;
+}
+
+.note p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* ===== Upgrade Banner ===== */
+.upgrade-banner {
+  background: #2b6cb0;
+  color: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 35px;
+}
+
+.upgrade-banner button {
+  margin-top: 12px;
+  background: #fff;
+  color: #2b6cb0;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.upgrade-banner button:hover {
+  background: #f7fafc;
+}
+
+/* ===== Utilities ===== */
+.text-center {
+  text-align: center;
+}
+
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-6 { margin-top: 1.5rem; }
